@@ -1,0 +1,41 @@
+.Categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 8vmin;
+}
+
+.Categories-topToolBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.actions-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 3vmin;
+}
+
+.actions-wrapper img {
+  width: 4vmin;
+  height: 4vmin;
+}
+.actions-wrapper button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin-top: 1vmin;
+  padding: 0.5vmin 1vmin;
+  background-color: transparent;
+}
+
+.Categories > h1 {
+  font-size: 5vmin;
+  letter-spacing: 0.3vmin;
+  margin: 4vmin 0;
+}

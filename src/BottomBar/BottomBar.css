@@ -1,0 +1,20 @@
+.BottomBar{
+    position:fixed;
+    right:1%;
+    bottom:1%;
+}
+
+.BottomBar ul{
+    display:flex;
+    align-items:center;
+    list-style-type: none;
+}
+
+.BottomBar li:not(:last-child){
+    margin-right: 3vmin;
+}
+
+.BottomBar img{
+    width:6vmin;
+    height:6vmin;
+}

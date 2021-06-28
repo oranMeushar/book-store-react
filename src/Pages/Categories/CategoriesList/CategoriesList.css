@@ -1,0 +1,7 @@
+.CategoriesList-empty-msg{
+    font-size: 3vmin;
+    letter-spacing: 0.3vmin;
+    background-color: lightgrey;
+    padding: 1vmin 2vmin;
+    margin-top: 2vmin;
+}

@@ -1,0 +1,90 @@
+.Books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 8vmin;
+}
+
+.Books-topToolBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+}
+
+.Books > h1 {
+  font-size: 5vmin;
+  letter-spacing: 0.3vmin;
+  margin-top: 4vmin;
+}
+
+.Books-filters {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vmin 0;
+  width: 50vmin;
+}
+
+.group-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  grid-column-gap: 3vmin;
+  grid-row-gap: 2vmin;
+  text-align: center;
+}
+
+.sort-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.sort-wrapper label {
+  margin-bottom: 2vmin;
+}
+
+.group-wrapper label:not(:first-child) {
+  justify-self: flex-end;
+}
+
+
+.group-wrapper label:first-child {
+  grid-column: 1/-1;
+}
+
+.Books-filters label {
+  display: flex;
+  align-items: center;
+  font-family: "Lora", serif;
+  font-size: 2vmin;
+}
+
+.Books-filters input {
+  appearance: none;
+  outline: none;
+  border: none;
+  position: relative;
+  width: 6vmin;
+  height: 2vmin;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s linear 0.1s;
+  cursor: pointer;
+}
+
+.Books-filters input::before {
+  content: "";
+  position: absolute;
+  width: 1.8vmin;
+  height: 1.8vmin;
+  background-color: rgb(147, 150, 153);
+  border-radius: 50%;
+  left: -2%;
+  transition: left 0.3s linear;
+}
+
+.Books-filters input:checked::before {
+  left: 70%;
+}
+.Books-filters input:checked {
+  background-color: lightblue;
+}

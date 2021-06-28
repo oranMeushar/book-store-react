@@ -1,0 +1,61 @@
+.BookItem{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border:1px solid black;
+    min-width: 60vmin;
+    margin-bottom: 1vmin;
+    padding:1vmin 2vmin;
+    border-radius: 0.6rem;
+    transform-origin: center top;
+    transition: transform 0.5s linear;
+}
+
+.BookItem-enter {
+    opacity: 0;
+    transform: translateY(-50%);
+    
+}
+.BookItem-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s linear;
+}
+ 
+  
+.BookItem-exit {
+}
+.BookItem-exit-active {
+opacity: 0;
+transform: translateY(50%);
+transition: all 0.5s linear;
+}
+
+
+.BookItem-details{
+    margin-right: 8vmin;
+    line-height:5vmin;
+}
+
+.BookItem-details p{
+    font-size: 3vmin;
+    letter-spacing: 0.3vmin;
+    margin-right: 4vmin;
+}
+
+.BookItem-buttons-wrapper button{
+    font-size: 2vmin;
+    outline: none;
+    border:1px solid black;
+    padding:0.5vmin 1vmin;
+    cursor: pointer;
+}
+
+.BookItem-delete{
+    margin-left: 1vmin;
+    color:red;
+    background-color: rgb(241, 176, 138);
+}
+.BookItem-edit{
+    background-color: #6ab6c9;
+}
