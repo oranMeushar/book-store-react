@@ -19,14 +19,6 @@ const NewBook = (props) => {
             setAuthor(props.editItem.author);
             setPrice(props.editItem.price)
             setCategory([props.editItem.category]);
-
-            const options = [...selectRef.current.children];
-            const index = options.findIndex(opt => {
-                return opt.id === props.editItem.category;
-            });
-            setTimeout(() => {
-                selectRef.current.children[index].selected = 'selected';
-            }, 10);
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
